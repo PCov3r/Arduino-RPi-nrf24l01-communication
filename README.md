@@ -4,8 +4,6 @@ Simple scripts to make an arduino and raspberry pi communicate with each other u
 
 To start, you need to install the RF24 library on both RPi and arduino board : https://github.com/nRF24/RF24
 
-
-
 ## On raspberry, 
 start by enabling SPI : ``sudo nano /boot/config.txt``uncomment ``dtparam=spi=on``. 
 Install the required package for following instructions : ``sudo apt-get update`` and ``sudo apt-get install git``
@@ -18,10 +16,12 @@ We then need to compile and install : ``make``, ``sudo make install -B``.
 
 The library is now installed and ready for C/C++ use. If we need the Python support too : ``sudo apt-get install python-dev python-setup-tools libboost-python-dev`` then ``cd pyRF24`` and ``./setup.py build`` 
 
-
-
 ## On arduino, 
 in the library manager search for RF24 library by TRMh20 and install it.
+
+## The scripts
+The scripts are written for Arduino=transmitter and RPi=receiver.
+To compile the RPi script, go to ``RF24/examples_linux``, copy the file there and edit Makefile ``sudo nano Makefile`` to add the name of the script to ``PROGRAMS= ...``
 
 ## Connection
 Connect the nrf24l01 as follow 
@@ -31,6 +31,3 @@ Connect the nrf24l01 as follow
 
 <img src="https://user-images.githubusercontent.com/38764918/115748014-12c11e00-a396-11eb-836a-7ed37e686a0e.jpg" width="500" height="600">
 
-
-The scripts are written for Arduino=transmitter and RPi=receiver.
-To compile the RPi script, go to ``RF24/examples_linux``, copy the file there and edit Makefile ``sudo nano Makefile`` to add the name of the script to ``PROGRAMS= ...``
