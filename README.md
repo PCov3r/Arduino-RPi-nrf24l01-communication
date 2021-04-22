@@ -26,3 +26,4 @@ Connect the nrf24l01 as follow
 
 
 The scripts are written for Arduino=transmitter and RPi=receiver
+To compile the RPi script, go to ``RF24/examples_linux``, copy the file there and edit Makefile ``sudo nano Makefile`` to add the name of the script to ``PROGRAMS= ...``
