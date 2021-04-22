@@ -21,7 +21,8 @@ Connect the nrf24l01 as follow
 
 <img src="https://user-images.githubusercontent.com/38764918/115746275-7e09f080-a394-11eb-89ca-0769d4c3a552.png" width="500" height="500"> 
 
-<img src="https://user-images.githubusercontent.com/38764918/115748014-12c11e00-a396-11eb-836a-7ed37e686a0e.jpg" width="500" height="500">
+
+<img src="https://user-images.githubusercontent.com/38764918/115748014-12c11e00-a396-11eb-836a-7ed37e686a0e.jpg" width="500" height="600">
 
 
 The scripts are written for Arduino=transmitter and RPi=receiver
